@@ -1,0 +1,111 @@
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: bolder;
+        src: local('SFPRODISPLAYBLACKITALIC'), url('SFPRODISPLAYBLACKITALIC.OTF') format('otf');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: bold;
+        src: local('SFPRODISPLAYBOLD'), url('SFPRODISPLAYBOLD.OTF') format('otf');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: bold;
+        src: local('SFPRODISPLAYHEAVYITALIC'), url('SFPRODISPLAYHEAVYITALIC.OTF') format('otf');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: lighter;
+        src: local('SFPRODISPLAYLIGHTITALIC'), url('SFPRODISPLAYLIGHTITALIC.OTF') format('otf');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight:500;
+        src: local('SFPRODISPLAYMEDIUM'), url('SFPRODISPLAYMEDIUM.OTF') format('otf');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: normal;
+        src: local('SFPRODISPLAYREGULAR'), url('SFPRODISPLAYREGULAR.OTF') format('otf');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 600;
+        src: local('SFPRODISPLAYSEMIBOLDITALIC'), url('SFPRODISPLAYSEMIBOLDITALIC.OTF') format('otf');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight:100;
+        src: local('SFPRODISPLAYTHINITALIC'), url('SFPRODISPLAYTHINITALIC.OTF') format('otf');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 300;
+        src: local('SFPRODISPLAYULTRALIGHTITALIC'), url('SFPRODISPLAYULTRALIGHTITALIC.OTF') format('otf');
+    }
+
+    /* @font-face {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Helvetica'), url('Helvetica.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Helvetica Oblique';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Helvetica Oblique'), url('Helvetica-Oblique.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Helvetica Compressed';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Helvetica Compressed'), url('helvetica-compressed-5871d14b6903a.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Helvetica Rounded Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Helvetica Rounded Bold'), url('helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Helvetica'), url('Helvetica-Bold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Helvetica Bold Oblique';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Helvetica Bold Oblique'), url('Helvetica-BoldOblique.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Helvetica Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Helvetica Light'), url('helvetica-light-587ebe5a59211.woff') format('woff');
+    } */

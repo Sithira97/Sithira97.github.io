@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ 
+*{
+  cursor: context-menu;
+  /*outline: black dashed 1px;
+  outline-offset: -1px;*/
+} 
+.fade-out{
+  background-color: rgb(3 7 18);
+}
+.fade-out .App {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+
+.fade-out.bg-visible .App {
+  opacity: 1;
 }

@@ -1,0 +1,37 @@
+            {/* <img src={process.env.PUBLIC_URL + '/images/self.png'} alt='' className="mx-auto flex items-center w-auto h-[30vh] sm:h-[50vh]" />
+            <div className="lg:w-4/6 w-full">
+                <h1 className="my-4 text-6xl font-bold leading-tight"> I'm Sithira
+                </h1>
+                <h1 className="my-4 text-4xl font-bold leading-tight">
+                    <TypeAnimation
+                        sequence={[
+                            "a Mechatronics Engineer",
+                            1500,
+                            "a Software Engineer",
+                            1500,
+                            "a Design Engineer",
+                            1500,
+                            "a Graphic Designer",
+                            1500,
+                            "an UI/UX Designer",
+                            1500,
+                            "an Online Freelancer",
+                            1500,
+                        ]}
+                        wrapper="span"
+                        speed={75}
+                        omitDeletionAnimation={true}
+                        repeat={Infinity}
+                    />
+                </h1>
+                <p className="text-2xl mb-8">
+                    Embracing a multidisciplinary path transforms the ordinary into the extraordinary, fusing diverse perspectives into a tapestry of innovation.
+                </p>
+                <div className="flex">
+                    <NavLink to="/about"><Button size='lg'
+                        className="bg-white text-gray-800 font-bold rounded-full">
+                        Know More...
+                    </Button>
+                    </NavLink>
+                </div>
+            </div> */}
