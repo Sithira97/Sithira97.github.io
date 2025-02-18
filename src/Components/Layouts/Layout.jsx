@@ -5,19 +5,32 @@ import About from '../Windows/AboutPage'
 import Education from '../Windows/EducationPage'
 
 const Layout = ({ children }) => {
+    const [windows, setWindows] = useState([]);
+    const [zIndices, setZIndices] = useState({ about: 1, education: 1 });
+    const [maxZIndex, setMaxZIndex] = useState(1);
 
-    const [aboutVisible, setAboutVisible] = useState(false);
-    const [educationVisible, setEducationVisible] = useState(false);
-    const showWindow = (setVisible) => () => {
-        setVisible(true);
+    const showWindow = (windowName) => () => {
+        setWindows((prevWindows) => {
+            const newWindows = prevWindows.filter(win => win !== windowName);
+            return [...newWindows, windowName];
+        });
+        bringToFront(windowName)();
     };
 
-    const hideWindow = (setVisible) => () => {
-        setVisible(false);
-    }
+    const hideWindow = (windowName) => () => {
+        setWindows((prevWindows) => prevWindows.filter(win => win !== windowName));
+    };
 
-
-    const [bounds, setBounds] = useState({ left: 0, top: 0, right: 0, bottom: 0 });
+    const bringToFront = (windowName) => () => {
+        setMaxZIndex((prevMaxZIndex) => {
+            const newMaxZIndex = prevMaxZIndex + 1;
+            setZIndices((prevZIndices) => ({
+                ...prevZIndices,
+                [windowName]: newMaxZIndex
+            }));
+            return newMaxZIndex;
+        });
+    };
 
     const nodeAbRef = useRef(null);
     const nodeEdRef = useRef(null);
@@ -29,19 +42,29 @@ const Layout = ({ children }) => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}>
-                {aboutVisible && (
-                    <About bounds={bounds} nodeRef={nodeAbRef} setBounds={setBounds} hideWindow={hideWindow(setAboutVisible)} />
+                {windows.includes('about') && (
+                    <About
+                        nodeRef={nodeAbRef}
+                        hideWindow={hideWindow('about')}
+                        bringToFront={bringToFront('about')}
+                        zIndex={zIndices['about']}
+                    />
                 )}
 
-                {educationVisible && (
-                    <Education bounds={bounds} nodeRef={nodeEdRef} setBounds={setBounds} hideWindow={hideWindow(setEducationVisible)} />
-                )}
+                {windows.includes('education') && (
+                    <Education
+                        nodeRef={nodeEdRef}
+                        hideWindow={hideWindow('education')}
+                        bringToFront={bringToFront('education')}
+                        zIndex={zIndices['education']}
+                    />
+                )} 
 
                 <TopNavBar />
                 {children}
                 <BottomNavbar
-                    showAbWindow={showWindow(setAboutVisible)}
-                    showEdWindow={showWindow(setEducationVisible)} />
+                    showAbWindow={showWindow('about')}
+                    showEdWindow={showWindow('education')} />
             </div>
         </div>
 
