@@ -33,7 +33,7 @@ const WiFiMenu = (props) => {
                     <p className='opacity-60 text-gray-900'>Known Networks</p>
                     <div className='flex justify-between mt-3 items-center'>
                         <div className='flex gap-3 items-center'>
-                            <div className='bg-blue-600 rounded-full size-8 flex justify-center items-center'>
+                            <div className='{props.wifiEnabled? 'bg-blue-600':'bg-gray-400'} rounded-full size-8 flex justify-center items-center'>
                                 <WifiIcon />
                             </div>
                             <p>Home Wi-Fi</p>
