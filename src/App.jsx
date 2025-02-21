@@ -28,6 +28,7 @@ const Layout = React.lazy(() => {
 });
 
 function App() {
+
   return (
     <FadeInWrapper>
       <Suspense fallback={<LoadingIndicator />}>
